@@ -6,7 +6,7 @@
 
 echo '<br>'. 21 .'<br>'. 18 .'<br>'. 19 .'<br>';
 
-// Validando se é um inteiro com is_int;
+// Validando se é um número é inteiro com is_int;
 if(is_int(5)){
   echo 'É inteiro <br>';
 } else {
