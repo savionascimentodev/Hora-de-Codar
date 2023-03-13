@@ -1,8 +1,13 @@
 <?php
 
   $host = "localhost";
-  $db = "php_maestria";
   $user = "root";
   $pass = "root";
+  $db = "teste";
 
-  $conn = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
+  $conn = new mysqli($host, $user, $pass, $db);
+
+  if($conn->connect_errno) {
+    echo "Erro na conexão! <br>";
+    echo "Erro: " . $conn->connect_error;
+  }

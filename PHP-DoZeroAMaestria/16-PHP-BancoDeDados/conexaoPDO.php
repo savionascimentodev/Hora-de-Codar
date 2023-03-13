@@ -1,10 +1,8 @@
 <?php
 
   $host = "localhost";
-  $db = "php_maestria";
+  $db = "teste";
   $user = "root";
   $pass = "root";
 
-  $conn = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
-
-  ?>
+  $conn = new PDO('mysql:host=localhost;dbname=teste', $user, $pass);
